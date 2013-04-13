@@ -24,7 +24,7 @@ public class ProdutoComumTest {
 	}
 	
 	@Test
-	public void devePossuirPrazoIgualACinco() {
+	public void devePossuirPrazoIgualATres() {
 		assertEquals(3, produto.getPrazo());
 	}
 
