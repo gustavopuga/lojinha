@@ -13,6 +13,7 @@ public class ClienteTest {
 
 	@Test
 	public void testCheckout() {
+		
 		Cliente zacarias = new Cliente("Zacarias");
 		
 		Produto caixa = new ProdutoComum("caixa de milho", 1000);
