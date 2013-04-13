@@ -24,8 +24,12 @@ public class ProdutoComumTest {
 	}
 	
 	@Test
-	public void devePossuirFreteIgualACinco() {
+	public void devePossuirPrazoIgualACinco() {
 		assertEquals(3, produto.getPrazo());
 	}
 
+	@Test
+	public void devePossuirFreteIgualDez() {
+		assertEquals(10, produto.getFrete());
+	}
 }

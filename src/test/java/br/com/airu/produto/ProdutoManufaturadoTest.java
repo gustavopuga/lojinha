@@ -24,7 +24,12 @@ public class ProdutoManufaturadoTest {
 	}
 	
 	@Test
-	public void devePossuirFreteIgualACinco() {
+	public void devePossuirPrazoIgualACinco() {
 		assertEquals(5, produto.getPrazo());
+	}
+	
+	@Test
+	public void devePossuirFreteIgualADez() {
+		assertEquals(10, produto.getFrete());
 	}
 }

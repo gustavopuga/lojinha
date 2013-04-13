@@ -25,7 +25,12 @@ public class ProdutoImportadoTest {
 	}
 	
 	@Test
-	public void devePossuirFreteIgualAQuinze() {
+	public void devePossuirPrazoIgualAQuinze() {
 		assertEquals(15, produto.getPrazo());
+	}
+	
+	@Test
+	public void devePossuirFreteIgualAVinte() {
+		assertEquals(20, produto.getFrete());
 	}
 }
