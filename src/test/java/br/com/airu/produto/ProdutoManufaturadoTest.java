@@ -23,4 +23,8 @@ public class ProdutoManufaturadoTest {
 		assertEquals(preco, precoTotal);
 	}
 	
+	@Test
+	public void devePossuirFreteIgualACinco() {
+		assertEquals(5, produto.getPrazo());
+	}
 }

@@ -3,6 +3,7 @@ package br.com.airu.produto;
 public class ProdutoManufaturado extends Produto{
 
 	private static final int FRETE = 10;
+	private static final int PRAZO = 5;
 
 	public ProdutoManufaturado(String titulo, int preco) {
 		super(titulo, preco);
@@ -12,8 +13,8 @@ public class ProdutoManufaturado extends Produto{
 		return preco;
 	}
 	
-	public int calculaPrazo(int prazo) {
-		return prazo < 5 ? 5 : prazo;
+	public int getPrazo() {
+		return PRAZO;
 	}
 
 	public int getFrete() {

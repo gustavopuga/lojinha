@@ -25,7 +25,8 @@ public class Pedido {
 	}
 	
 	public int calculaPrazo(int prazo){
-		return produto.calculaPrazo(prazo);
+		int prazoProduto = produto.getPrazo();
+		return prazo < prazoProduto ? prazoProduto : prazo;
 	}
 
 	public int getFrete() {

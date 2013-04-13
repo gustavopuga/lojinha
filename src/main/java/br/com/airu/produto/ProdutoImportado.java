@@ -4,6 +4,7 @@ public class ProdutoImportado extends Produto {
 
 	public static final double TAXA_DE_IMPORTACAO = 1.5;
 	private static final int FRETE = 20;
+	private static final int PRAZO = 15;
 
 	public ProdutoImportado(String titulo, int preco) {
 		super(titulo, preco);
@@ -13,10 +14,10 @@ public class ProdutoImportado extends Produto {
 		return (int) (preco * TAXA_DE_IMPORTACAO);
 	}
 	
-	public int calculaPrazo(int prazo) {
-		return prazo < 15 ? 15 : prazo;
+	public int getPrazo() {
+		return PRAZO;
 	}
-
+	
 	public int getFrete() {
 		return FRETE;
 	}

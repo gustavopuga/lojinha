@@ -23,4 +23,9 @@ public class ProdutoImportadoTest {
 		
 		assertEquals(calculoManualPreco, precoTotal);
 	}
+	
+	@Test
+	public void devePossuirFreteIgualAQuinze() {
+		assertEquals(15, produto.getPrazo());
+	}
 }

@@ -20,7 +20,7 @@ public abstract class Produto {
 
 	public abstract int getPrecoTotal();
 	
-	public abstract int calculaPrazo(int prazo);
+	public abstract int getPrazo();
 	
 	public abstract int getFrete();
 	
