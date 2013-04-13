@@ -1,8 +1,13 @@
 package br.com.airu;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import br.com.airu.produto.Produto;
+import br.com.airu.produto.ProdutoComum;
+import br.com.airu.produto.ProdutoImportado;
+import br.com.airu.produto.ProdutoManufaturado;
 
 public class ClienteTest {
 
@@ -10,9 +15,9 @@ public class ClienteTest {
 	public void testCheckout() {
 		Cliente zacarias = new Cliente("Zacarias");
 		
-		Produto caixa = new Produto("caixa de milho", 1000, Produto.COMUM);
-		Produto boneca = new Produto("boneca", 3000, Produto.MANUFATURADO);
-		Produto relogio = new Produto("relógio", 6000, Produto.IMPORTADO);
+		Produto caixa = new ProdutoComum("caixa de milho", 1000);
+		Produto boneca = new ProdutoManufaturado("boneca", 3000);
+		Produto relogio = new ProdutoImportado("relógio", 6000);
 		
 		Pedido pedido1 = new Pedido(caixa, 2);
 		Pedido pedido2 = new Pedido(boneca, 1);
