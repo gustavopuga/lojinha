@@ -1,5 +1,7 @@
 package br.com.airu.produto;
 
+import static br.com.airu.produto.Produto.FRETE_PADRAO;
+import static br.com.airu.produto.Produto.PRAZO_PADRAO;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
@@ -25,12 +27,12 @@ public class ProdutoImportadoTest {
 	}
 	
 	@Test
-	public void devePossuirPrazoIgualAQuinze() {
-		assertEquals(15, produto.getPrazo());
+	public void devePossuirPrazoIgualACincoVezesOPadrao() {
+		assertEquals(5*PRAZO_PADRAO, produto.getPrazo());
 	}
 	
 	@Test
-	public void devePossuirFreteIgualAVinte() {
-		assertEquals(20, produto.getFrete());
+	public void devePossuirFreteIgualADuasVezesOPadrao() {
+		assertEquals(2*FRETE_PADRAO, produto.getFrete());
 	}
 }

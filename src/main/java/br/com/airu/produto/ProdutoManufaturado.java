@@ -2,8 +2,8 @@ package br.com.airu.produto;
 
 public class ProdutoManufaturado extends Produto{
 
-	private static final int FRETE = 10;
-	private static final int PRAZO = 5;
+	private static final int FRETE = FRETE_PADRAO;
+	private static final int PRAZO = PRAZO_PADRAO + 2;
 
 	public ProdutoManufaturado(String titulo, int preco) {
 		super(titulo, preco);

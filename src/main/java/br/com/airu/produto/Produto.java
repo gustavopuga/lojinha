@@ -2,6 +2,9 @@ package br.com.airu.produto;
 
 public abstract class Produto {
 
+	public static final int FRETE_PADRAO = 10;
+	public static final int PRAZO_PADRAO = 3;
+	
 	protected final String titulo;
 	protected final int preco;
 	

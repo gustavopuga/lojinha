@@ -2,8 +2,8 @@ package br.com.airu.produto;
 
 public class ProdutoComum extends Produto{
 
-	private static final int FRETE = 10;
-	private static final int PRAZO = 3;
+	private static final int FRETE = FRETE_PADRAO;
+	private static final int PRAZO = PRAZO_PADRAO;
 
 	public ProdutoComum(String titulo, int preco) {
 		super(titulo, preco);
